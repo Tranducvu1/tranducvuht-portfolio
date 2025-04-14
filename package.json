@@ -20,6 +20,7 @@
     "@types/three": "^0.174.0",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
+    "aws-amplify": "^6.14.2",
     "babel-plugin-react-compiler": "^19.0.0-beta-aeaed83-20250323",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -35,14 +36,21 @@
     "vaul": "^1.1.2"
   },
   "devDependencies": {
+    "@aws-amplify/backend": "^1.14.3",
+    "@aws-amplify/backend-cli": "^1.5.0",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "aws-cdk": "^2.1003.0",
+    "aws-cdk-lib": "^2.180.0",
+    "constructs": "^10.4.2",
+    "esbuild": "^0.25.2",
     "eslint": "^9",
     "eslint-config-next": "15.2.4",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
   }
 }
