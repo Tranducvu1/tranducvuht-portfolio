@@ -6,8 +6,8 @@ frontend:
         - nvm use 20 || nvm install 20
     build:
       commands:
-        - yarn install --frozen-lockfile
-        - yarn build
+        - npm ci
+        - npm run build
   artifacts:
     baseDirectory: build
     files:
