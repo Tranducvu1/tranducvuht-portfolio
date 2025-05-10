@@ -1,0 +1,13 @@
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm use 20 || nvm install 20
+    build:
+      commands:
+        - npm ci
+        - npm run build   # Chạy lệnh build, sẽ tự động chạy `next export`
+  artifacts:
+    baseDirectory: out    # Thư mục xuất ra của Next.js sau khi chạy `next export`
+    files:
+      - '**/*'
