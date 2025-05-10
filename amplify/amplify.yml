@@ -1,0 +1,15 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm install 20
+        - nvm use 20
+    build:
+      commands:
+        - npm ci
+        - npm run build   # Lệnh này cần chạy next export nếu dùng static
+  artifacts:
+    baseDirectory: out   # Thư mục xuất ra từ next export
+    files:
+      - '**/*'
