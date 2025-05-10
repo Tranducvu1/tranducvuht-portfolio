@@ -3,12 +3,10 @@ frontend:
   phases:
     preBuild:
       commands:
-        - nvm install 20
-        - nvm use 20
+        - npm ci
     build:
       commands:
-        - npm ci
-        - npm run build   # nên build như "next build && next export"
+        - npm run build
   artifacts:
     baseDirectory: out
     files:
@@ -16,3 +14,4 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
+      - .next/cache/**/*
